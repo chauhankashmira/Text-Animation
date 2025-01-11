@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+    color: white;
+  }
+
+  .animated-text {
+    font-size: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 2;
+  }
+
+  .cursor {
+    display: inline-block;
+    background-color: green;
+    width: 0px;
+    height: 0em;
+    margin-left: 3px;
+    animation: blink 0.7s steps(2) infinite;
+  }
+
+  @keyframes blink
+  {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  .snowflake {
+    position:-webkit-sticky; 
+    top: -5px;
+    color: white;
+    font-size: 0.1em;
+    opacity: 0.8;
+    animation:both;
+  }
+  
